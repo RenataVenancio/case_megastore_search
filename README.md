@@ -38,34 +38,34 @@ case_megastore_search
 
 ---
 
-#### ⚙️ Como executar
+### ⚙️ Como executar
 
-### 1. Clone o projeto
+#### 1. Clone o projeto
 
 git clone https://github.com/seu-usuario/case_megastore_search.git
 cd case_megastore_search
 
-### 2. Instale as dependências
+#### 2. Instale as dependências
 
 Certifique-se de ter o Rust instalado. Se não tive:  
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh  
 
-### 3. Crie o arquivo .env
+#### 3. Crie o arquivo .env
 
 API_URL=https://api.megastore.com
 API_KEY=123456
 
-### 4. Rode a aplicação com filtros
+#### 4. Rode a aplicação com filtros
 
 cargo run -- --name notebook --store "Tech Center" --available-only --sort price
 
-### 5. Exporte os resultados (opcional)
+#### 5. Exporte os resultados (opcional)
 
 cargo run -- --category "Eletrônicos" --export csv
 
 cargo run -- --location "São Paulo" --category "Informática" --min-price 1000 --max-price 3000 --sort name --export json
 
-#### 🧪 Executar testes
+### 🧪 Executar testes
 
 cargo test  
 
@@ -79,7 +79,7 @@ test test_filtrar_por_preco_maximo ... ok
   
 test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s  
 
-#### 📦 Tecnologias
+### 📦 Tecnologias
 
 * Rust
 * clap – Parser de argumentos CLI
@@ -88,25 +88,25 @@ test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 * csv – Exportação para arquivos CSV
 * dotenvy – Variáveis de ambiente
 
-#### 📘 Exemplo de uso
+### 📘 Exemplo de uso
 
-### Buscar notebooks até R$3000
+#### Buscar notebooks até R$3000
 cargo run -- --name notebook --max-price 3000
 
-### Mostrar apenas produtos com estoque disponíveis
+#### Mostrar apenas produtos com estoque disponíveis
 cargo run -- --name cafeteira --available-only
 
-### Filtrar por loja e ordenar por preço
+#### Filtrar por loja e ordenar por preço
 cargo run -- --store "InfoShop" --max-price 1500 --sort price
 
-### Exportar todos os eletrônicos disponíveis para CSV
+#### Exportar todos os eletrônicos disponíveis para CSV
 cargo run -- --category "Eletrônicos" --available-only --export csv
 
-#### ✍️ Autor(a)
+### ✍️ Autor(a)
 Renata Alves
 Disciplina: Data Structures Strategy and Implementation
 Professora: [Nome da Professora]
 
-#### 📄 Licença
+### 📄 Licença
 
 MIT License
