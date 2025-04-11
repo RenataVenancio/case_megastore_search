@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Tech Center",
+    "site": "https://techcenter.com.br",
+    "location": "São Paulo"
+  },
+  {
+    "id": 2,
+    "name": "InfoShop",
+    "site": "https://infoshop.com.br",
+    "location": "Curitiba"
+  },
+  {
+    "id": 3,
+    "name": "Casa & Vídeo",
+    "site": "https://casaevideo.com",
+    "location": "Rio de Janeiro"
+  },
+  {
+    "id": 4,
+    "name": "Lar Ideal",
+    "site": "https://larideal.com.br",
+    "location": "Belo Horizonte"
+  },
+  {
+    "id": 5,
+    "name": "Esporte Total",
+    "site": "https://esportetotal.com",
+    "location": "Porto Alegre"
+  }
+]
