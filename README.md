@@ -90,16 +90,16 @@ test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 #### 📘 Exemplo de uso
 
-# Buscar notebooks até R$3000
+### Buscar notebooks até R$3000
 cargo run -- --name notebook --max-price 3000
 
-# Mostrar apenas produtos com estoque disponíveis
+### Mostrar apenas produtos com estoque disponíveis
 cargo run -- --name cafeteira --available-only
 
-# Filtrar por loja e ordenar por preço
+### Filtrar por loja e ordenar por preço
 cargo run -- --store "InfoShop" --max-price 1500 --sort price
 
-# Exportar todos os eletrônicos disponíveis para CSV
+### Exportar todos os eletrônicos disponíveis para CSV
 cargo run -- --category "Eletrônicos" --available-only --export csv
 
 #### ✍️ Autor(a)
